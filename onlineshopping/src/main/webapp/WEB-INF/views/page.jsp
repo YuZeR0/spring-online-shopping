@@ -28,11 +28,14 @@
 
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.css" rel="stylesheet">
-
+<link href="${css}/bootstrap.css" rel="stylesheet">
 <!-- Custom styles for this template -->
-<link href="${css}/myapp.css" rel="stylesheet">
+
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
 
 <link href="${css}/theme.css" rel="stylesheet">
+
+<link href="${css}/myapp.css" rel="stylesheet">
 
 </head>
 
@@ -70,6 +73,12 @@
 
 		<!-- Bootstrap Core JavaScript -->
 		<script src="${js}/bootstrap.min.js"></script>
+		
+		<!-- DataTables Javascript -->
+		<script src="${js}/jquery.dataTables.js"></script>
+		
+		<script src="${js}/jquery.dataTables.bootstrap.js"></script>
+		
 		<script src="${js}/myapp.js"></script>
 	</div>
 </body>

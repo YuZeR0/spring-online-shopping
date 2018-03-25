@@ -3,7 +3,6 @@ package com.gunjankharel.shoppingbackend.daoimpl;
 import java.util.List;
 
 import org.hibernate.SessionFactory;
-import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -82,7 +81,7 @@ public class ProductDAOImpl implements ProductDAO {
 				.getCurrentSession()
 					.createQuery("FROM Product WHERE active = :active AND categoryId = :categoryId", Product.class)
 						.setParameter("active", true)
-							.setParameter("categoryId", categoryId)
+						.setParameter("categoryId", categoryId)
 							.getResultList();
 	}
 

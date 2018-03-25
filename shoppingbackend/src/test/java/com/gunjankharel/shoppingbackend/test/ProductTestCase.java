@@ -25,7 +25,7 @@ public class ProductTestCase {
 		productDAO = (ProductDAO) context.getBean("productDAO");
 	}
 
-	@Test
+	/*@Test
 	public void testCRUDProduct() {
 
 		product = new Product();
@@ -53,6 +53,26 @@ public class ProductTestCase {
 		
 		
 		//fetching the list
-		assertEquals("There was an error retrieving the list of products.",7, productDAO.list().size());
+		assertEquals("There was an error retrieving the list of products.",6, productDAO.list().size());
+	}*/
+	
+	@Test
+	public void testListActiveProducts() {
+		assertEquals("There was an error retrieving the list of products.",
+				5, productDAO.listActiveProducts().size());
+	}
+	
+	@Test
+	public void testListActiveProductsByCategory() {
+		assertEquals("There was an error retrieving the list of products.",
+				3, productDAO.listActiveProductsByCategory(3).size());
+		assertEquals("There was an error retrieving the list of products.",
+				2, productDAO.listActiveProductsByCategory(1).size());
+	}
+	
+	@Test
+	public void testGetLatestActiveProductsByCategory() {
+		assertEquals("There was an error retrieving the list of products.",
+				3, productDAO.getLatestActiveProducts(3).size());
 	}
 }

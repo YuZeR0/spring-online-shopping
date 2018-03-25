@@ -15,6 +15,7 @@
 		<javaee.version>8.0</javaee.version>
 		<spring.version>4.3.4.RELEASE</spring.version>
 		<hibernate.version>5.2.15.Final</hibernate.version>
+		<jackson.version>2.8.7</jackson.version>
 	</properties>
 
 	<dependencies>
@@ -67,6 +68,20 @@
 			<groupId>org.apache.commons</groupId>
     		<artifactId>commons-dbcp2</artifactId>
 			<version>2.1.1</version>
+		</dependency>
+		
+		<!-- Jackson XML Core -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+    		<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		
+		<!-- Jackson XML Annotations -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+    		<artifactId>jackson-annotations</artifactId>
+			<version>${jackson.version}</version>
 		</dependency>
 
 	</dependencies>
