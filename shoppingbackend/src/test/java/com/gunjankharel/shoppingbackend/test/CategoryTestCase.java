@@ -55,7 +55,7 @@ public class CategoryTestCase {
 		
 		
 		//fetching the list
-		assertEquals("Successfully fetched the list of categories from table!", 1, categoryDAO.list().size());
+		assertEquals("Successfully fetched the list of categories from table!", 6, categoryDAO.list().size());
 	}
 
 	/*

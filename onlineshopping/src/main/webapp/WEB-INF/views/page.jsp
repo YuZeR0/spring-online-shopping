@@ -23,7 +23,10 @@
 <title>Online Shopping - ${title}</title>
 
 <script>
+
 	window.menu = '${title}';
+	
+	window.contextRoot = '${contextRoot}';
 </script>
 
 <!-- Bootstrap core CSS -->
@@ -77,7 +80,7 @@
 		<!-- DataTables Javascript -->
 		<script src="${js}/jquery.dataTables.js"></script>
 		
-		<script src="${js}/jquery.dataTables.bootstrap.js"></script>
+		<script src="${js}/dataTables.bootstrap.js"></script>
 		
 		<script src="${js}/myapp.js"></script>
 	</div>
